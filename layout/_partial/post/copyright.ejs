@@ -1,3 +1,4 @@
+<!--
 <blockquote class="mt-2x">
   <ul class="post-copyright list-unstyled">
     <% if (post.permalink) { %>
@@ -11,6 +12,7 @@
     </li>
   </ul>
 </blockquote>
+-->
 <% if(theme.profile && theme.profile.enabled) { %>
 <% var profile = theme.profile; %>
 <div class="panel panel-default panel-badger">
@@ -22,8 +24,8 @@
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="<%= profile.follow %>" target="_blank"><span class="text-dark"><%= profile.author %></span><small class="ml-1x"><%= profile.author_title %></small></a></h3>
-        <div><%= profile.author_description %></div>
+        <h4 class="media-heading"><a href="<%= profile.follow %>" target="_blank"><span class="text-dark"><%= profile.author %></span><small class="ml-1x"><%= profile.author_title %></small></a></h4>
+        <small><%= profile.author_description %></small>
       </div>
     </figure>
   </div>
